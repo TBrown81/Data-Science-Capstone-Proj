@@ -76,8 +76,6 @@ dfB.loc[dfB['Postal Code']=='M5G']
 #verify data imported correctly
 dfLL.loc[dfLL['Postal Code']=='M5G']
 
-#compare how the data looks as of now
-df_all.loc[df_all['Postal Code']=='M5G']
 
 #merge the dataframes on Postal Code to eliminate the problem in the above cell
 df_union = pd.merge(dfLL, dfB, on = ['Postal Code'])
